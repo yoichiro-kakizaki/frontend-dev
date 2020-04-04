@@ -1,0 +1,42 @@
+@import 'modules/variables';
+@import 'modules/mixin';
+@import 'modules/hero-slider';
+@import 'modules/text-animation';
+@import 'modules/image-slide';
+@import 'modules/button';
+@import 'modules/mobile-menu';
+@import 'modules/appear';
+
+// main.scss
+@import "breakpoints/base";
+
+// SmartPhone landscape
+@media (min-width: 480px) {
+  @import 'breakpoints/480up';
+}
+
+// Tablet
+@media (min-width: 600px) {
+  @import 'breakpoints/600up';
+}
+
+// Tablet landscape or Small Desktop
+@media (min-width: 960px) {
+  @import 'breakpoints/960up';
+}
+
+// PC
+@media (min-width: 1280px) {
+  @import 'breakpoints/1280up';
+}
+
+// Retina
+@media (min-resolution: 192dpi),
+      (-webkit-min-device-pixel-ratio: 2) {
+  @import 'breakpoints/2x';
+}
+
+// Print
+@media print {
+  @import 'breakpoints/print';
+}
